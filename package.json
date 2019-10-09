@@ -47,10 +47,12 @@
     "bupnp": "~0.2.6",
     "bval": "~0.1.6",
     "bweb": "~0.1.8",
+    "connect": "^3.7.0",
     "goosig": "~0.1.0",
     "hs-client": "~0.0.6",
     "mrmr": "~0.1.8",
     "n64": "~0.2.9",
+    "playdoh": "^2.0.2",
     "urkel": "~0.6.3"
   },
   "devDependencies": {
