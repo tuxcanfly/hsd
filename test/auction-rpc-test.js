@@ -5,6 +5,7 @@
 
 const assert = require('bsert');
 const bio = require('bufio');
+const Logger = require('blgr');
 const plugin = require('../lib/wallet/plugin');
 const rules = require('../lib/covenants/rules');
 const common = require('./util/common');
@@ -34,7 +35,8 @@ class TestUtil {
     this.node = new FullNode({
       memory: true,
       workers: true,
-      network: this.network.type
+      network: this.network.type,
+      logger: new Logger({'level': 'debug'})
     });
 
     this.node.use(plugin);
