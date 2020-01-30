@@ -34,7 +34,7 @@ jobs:
           at: .
       - run:
           name: Tests with coverage
-          command: npm run lint-ci
+          command: npm run test-file test/auction-rpc-test.js
       - run:
           name: Submit coverage
           command: ./node_modules/.bin/codecov
