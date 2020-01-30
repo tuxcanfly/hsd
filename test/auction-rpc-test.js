@@ -42,7 +42,7 @@ class TestUtil {
     this.node.use(plugin);
 
     this.nclient = new NodeClient({
-      timeout: 10000,
+      timeout: 15000,
       host: options.host,
       port: options.nport
     });
