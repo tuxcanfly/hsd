@@ -860,7 +860,7 @@ describe('Indexer', function() {
         }
       }
 
-      await forValue(node.mempool.map, 'size', 20);
+      await forValue(node.mempool.map, 'size', 10);
     });
 
     after(async () => {
