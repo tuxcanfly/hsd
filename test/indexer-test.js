@@ -33,27 +33,17 @@ const vectors = [
   // Secret for the public key vectors:
   // cVDJUtDjdaM25yNVVDLLX3hcHUfth4c7tY3rSc4hy9e8ibtCuj6G
   {
-    addr: 'bcrt1qngw83fg8dz0k749cg7k3emc7v98wy0c7azaa6h',
+    addr: 'rs1qchkxtghadhqkpuqv3z9k3tlzkmezruaf2tk7mr',
     amount: 19.99,
     label: 'p2wpkh'
   },
-  {
-    addr: 'muZpTpBYhxmRFuCjLc7C6BBDF32C8XVJUi',
-    amount: 1.99,
-    label: 'p2pkh'
-  },
   // Secrets for 1 of 2 multisig vectors:
-  // cVDJUtDjdaM25yNVVDLLX3hcHUfth4c7tY3rSc4hy9e8ibtCuj6G
-  // 93KCDD4LdP4BDTNBXrvKUCVES2jo9dAKKvhyWpNEMstuxDauHty
+  // L3jjPwTwvCtjFFHgXnYgY5QZUJsm5cxF7py196LE6HornDQq9Qgk
+  // KwexxhcjM5jABAkUcaiEgR4Ky8q9kGhGQkZM3o7TNbFCsxD9JJM1
   {
-    addr: 'bcrt1q2nj8e2nhmsa4hl9qw3xas7l5n2547h5uhlj47nc3pqfxaeq5rtjs9g328g',
+    addr: 'rs1q3lwjrsc7vlpkn7v8nqqlhf3hqduxza8h9rr9ucsj7l2z4fvyqxxqwkspn8',
     amount: 0.99,
     label: 'p2wsh'
-  },
-  {
-    addr: '2Muy8nSQaMsMFAZwPyiXSEMTVFJv9iYuhwT',
-    amount: 0.11,
-    label: 'p2sh'
   }
 ];
 
@@ -553,7 +543,7 @@ describe('Indexer', function() {
             httpPort: ports.node,
             plugins: [require('../lib/wallet/plugin')],
             env: {
-              'BCOIN_WALLET_HTTP_PORT': ports.wallet.toString()
+              'HSD_WALLET_HTTP_PORT': ports.wallet.toString()
             },
             logLevel: 'none'
           });
@@ -807,7 +797,7 @@ describe('Indexer', function() {
         httpPort: ports.node,
         plugins: [require('../lib/wallet/plugin')],
         env: {
-          'BCOIN_WALLET_HTTP_PORT': ports.wallet.toString()
+          'HSD_WALLET_HTTP_PORT': ports.wallet.toString()
         }
       });
 
