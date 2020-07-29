@@ -1,7 +1,7 @@
 # HSD
 
-[![Build Status][circleci-status-img]][circleci-status-url]
-[![Coverage Status][coverage-status-img]][coverage-status-url]
+[![Build Status][github-status-img]][github-status-url]
+[![Coverage Status][coveralls-status-img]][coveralls-status-url]
 
 __HSD__ is an implementation of the [Handshake][handshake] Protocol.
 
@@ -458,7 +458,7 @@ See LICENSE for more info.
 [unbound]: https://www.nlnetlabs.nl/projects/unbound/download/
 [hnsd]: https://github.com/handshake-org/hnsd
 [airdrop]: https://github.com/handshake-org/hs-airdrop
-[coverage-status-img]: https://codecov.io/gh/handshake-org/hsd/badge.svg?branch=master
-[coverage-status-url]: https://codecov.io/gh/handshake-org/hsd?branch=master
-[circleci-status-img]: https://circleci.com/gh/handshake-org/hsd/tree/master.svg?style=shield
-[circleci-status-url]: https://circleci.com/gh/handshake-org/hsd/tree/master
+[github-status-img]: https://github.com/tuxcanfly/hsd/workflows/Node.js%20CI/badge.svg
+[github-status-url]: https://github.com/tuxcanfly/hsd/tree/master
+[coveralls-status-img]: https://coveralls.io/repos/github/tuxcanfly/hsd/badge.svg?branch=master)
+[coveralls-status-url]: https://coveralls.io/github/tuxcanfly/hsd?branch=master
