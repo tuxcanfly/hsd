@@ -29,10 +29,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-    - name: eslint
-      uses: getsentry/action-eslint-fix@v1
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: bradennapier/eslint-plus-action@v3.4.0
 
     - name: coveralls
       uses: coverallsapp/github-action@v1.1.1
