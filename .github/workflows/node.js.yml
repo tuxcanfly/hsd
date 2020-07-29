@@ -27,7 +27,8 @@ jobs:
     - run: sudo apt-get install -y libunbound-dev
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    - run: npm install -g nyc bmocha
+    - run: nyc --reporter lcov bmocha -- --reporter spec test/*.js
 
     - name: coveralls
       uses: coverallsapp/github-action@v1.1.1
