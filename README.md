@@ -458,7 +458,7 @@ See LICENSE for more info.
 [unbound]: https://www.nlnetlabs.nl/projects/unbound/download/
 [hnsd]: https://github.com/handshake-org/hnsd
 [airdrop]: https://github.com/handshake-org/hs-airdrop
-[coverage-status-img]: https://coveralls.io/repos/github/tuxcanfly/hsd/badge.svg?branch=master
-[coverage-status-url]: https://coveralls.io/github/tuxcanfly/hsd?branch=master
-[ci-status-img]: https://github.com/tuxcanfly/hsd/workflows/npm%20test/badge.svg
-[ci-status-url]: https://github.com/tuxcanfly/hsd/tree/master
+[coverage-status-img]: https://coveralls.io/repos/github/handshake-org/hsd/badge.svg?branch=master
+[coverage-status-url]: https://coveralls.io/github/handshake-org/hsd?branch=master
+[ci-status-img]: https://github.com/handshake-org/hsd/workflows/npm%20test/badge.svg
+[ci-status-url]: https://github.com/handshake-org/hsd/tree/master
