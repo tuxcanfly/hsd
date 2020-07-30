@@ -460,5 +460,5 @@ See LICENSE for more info.
 [airdrop]: https://github.com/handshake-org/hs-airdrop
 [github-status-img]: https://github.com/tuxcanfly/hsd/workflows/Node.js%20CI/badge.svg
 [github-status-url]: https://github.com/tuxcanfly/hsd/tree/master
-[coveralls-status-img]: https://coveralls.io/repos/github/tuxcanfly/hsd/badge.svg?branch=master)
+[coveralls-status-img]: https://coveralls.io/repos/github/tuxcanfly/hsd/badge.svg?branch=master
 [coveralls-status-url]: https://coveralls.io/github/tuxcanfly/hsd?branch=master
