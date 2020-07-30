@@ -1,7 +1,4 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: npm test
 
 on:
   push:
@@ -17,18 +14,20 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: npm test
-      uses: actions/setup-node@v1
     - run: sudo apt-get install -y libunbound-dev
     - run: npm ci
-    - run: npm run build --if-present
-    - run: npm install -g nyc bmocha
-    - run: nyc --reporter lcov bmocha -- --reporter spec test/*.js
+    - run: npm install eslint babel-eslint
 
     - name: eslint
-      uses: getsentry/action-eslint-fix@v1
+      uses: hallee/eslint-action@1.0.3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{secrets.GITHUB_TOKEN}}
+
+    - name: npm test
+      uses: actions/setup-node@v1
+    - run: npm run build --if-present
+    - run: npm install nyc bmocha
+    - run: node_modules/.bin/nyc --reporter lcov node_modules/.bin/bmocha -- --reporter spec test/*.js
 
     - name: coveralls
       uses: coverallsapp/github-action@v1.1.1
