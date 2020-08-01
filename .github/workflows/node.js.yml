@@ -22,7 +22,7 @@ jobs:
            npm install nyc coveralls
 
     - name: lint
-      run: node_modules/bslint/bin/eslint .
+      run: npm run lint
 
     - name: test
       run: node_modules/.bin/nyc --reporter lcov node_modules/.bin/bmocha -- --reporter spec test/*.js
