@@ -16,7 +16,7 @@ const Block = require('../lib/primitives/block');
 const TX = require('../lib/primitives/tx');
 const Witness = require('../lib/script/witness');
 const util = require('../lib/utils/util');
-const reserved = require('../lib/covenants/reserved');
+const reserved = require('../lib/covenants/reserved')
 const {AIRDROP_ROOT, FAUCET_ROOT} = AirdropProof;
 const NAME_ROOT = merkle.createRoot(BLAKE2b, [...reserved.keys()]);
 

@@ -6,7 +6,7 @@ const path = require('path');
 const os = require('os');
 const Config = require('bcfg');
 const Seeder = require('../lib/node/seeder');
-const config = new Config('hs-seeder');
+const config = new Config('hs-seeder')
 
 config.load({
   argv: true

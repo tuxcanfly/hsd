@@ -12,7 +12,7 @@ const WorkerPool = require('../lib/workers/workerpool');
 const Miner = require('../lib/mining/miner');
 const MemWallet = require('./util/memwallet');
 const Network = require('../lib/protocol/network');
-const AirdropProof = require('../lib/primitives/airdropproof');
+const AirdropProof = require('../lib/primitives/airdropproof')
 
 const network = Network.get('regtest');
 
